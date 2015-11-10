@@ -1,4 +1,7 @@
-
+---
+sitemap: exclude
+layout: null
+---
 
 /* TEAM */
 
@@ -6,7 +9,7 @@
 Your title: Fredrik Olsson.
 
 
-Twitter: Fredriko83.
+Twitter: {{ site.twitter_username }}.
 
 
 Location: Broby, Sweden.
@@ -24,7 +27,7 @@ Name: name or url
 /* SITE */
 
 
-Last update: 20151109
+Last update: {{ site.time | date_to_rfc822 }}
 
 
 Standards: HTML5, CSS3,..
