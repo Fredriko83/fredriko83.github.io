@@ -39,12 +39,11 @@
         margin-right:-5px;
     }
     a {
-        color:#D50003;
         text-decoration:none;
         padding:10px;
         }
-    a:link, nav a:visited {Background-color:#999; color:#FFFFFF}
-    a:hover, nav a:active {Background-color:#880002; color:#FFFFFF}
+    a:link, nav a:visited {Background-color:$blue-color; color:#FFFFFF}
+    a:hover, nav a:active {Background-color:$purple-color; color:#FFFFFF}
 
 
 
@@ -181,16 +180,15 @@
  * Site footer
  */
 .site-footer {
-    background-color: $purple-color-light;
-    border-top: 1px solid $grey-color-light;
+    border-top: 2px solid $grey-color;
     padding: $spacing-unit 0;
 }
 
-.footer-heading {
+/*.footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
 }
-
+*/
 .contact-list,
 .social-media-list {
     list-style: none;

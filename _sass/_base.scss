@@ -8,7 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 /**
  * Basic styling
@@ -21,8 +24,17 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    margin: 0 0 65px; /* bottom = footer height */
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color: $blue-color-light;
+}
 
 
 /**
