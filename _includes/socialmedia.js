@@ -1,6 +1,3 @@
-/**
- * Created by Fredrik on 2015-11-12.
- */
 <script>
 window.fbAsyncInit = function() {
     FB.init({

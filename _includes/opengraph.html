@@ -4,7 +4,9 @@
 
 <meta property="og:type" content="Blog post">
 
-<meta property="og:url" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<!--<meta property="og:url" content="{{ post.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
+
+<meta property="og:url" content="{{site.url}}{{page.url}}">
 
 <meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ {{baseurl}}/avatar | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
