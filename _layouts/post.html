@@ -2,15 +2,10 @@
 layout: default
 comments: true
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v2.5&appId=1032606780136733";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
+<!--Facebook Like-->
+<div class="share">
+<div class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-layout="button"></div>
+</div>
 
 <div class="post">
 
@@ -22,15 +17,9 @@ comments: true
   <article class="post-content">
     {{ content }}
   </article>
-    <div class="addthis_native_toolbox"></div>
     {% include comments.html %}
-    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></div>
-    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </div>
-
-
-
 
 <br>
 
