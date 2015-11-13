@@ -182,6 +182,7 @@
 .site-footer {
     border-top: 2px solid $grey-color;
     padding: $spacing-unit 0;
+
 }
 
 /*.footer-heading {
@@ -251,6 +252,10 @@
  */
 .share {
     height: 25px;
+}
+
+.fb-share-button {
+    width: 75px;
 }
 
 .page-content {
