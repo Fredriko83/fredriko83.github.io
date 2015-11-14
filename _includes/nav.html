@@ -10,6 +10,7 @@
     </a>
 -->
     <div class="trigger2">
+        <li><a class="page-link" href="{{ site.baseurl }}/">Blogg</a></li>
         {% for page in site.pages %}
         {% if page.title %}
         <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>

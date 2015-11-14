@@ -1,6 +1,11 @@
 /**
  * Site header
  */
+
+#header-title {
+    margin-top: 20px;
+}
+
 .site-header {
     border-top: 15px solid $white-color;
     border-bottom: 0px solid $grey-color-light;
@@ -15,11 +20,13 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
+    font-size: 40px;
+    //line-height: 56px;
+    //letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    margin-top: 25px;
+    //float: left;
+    font-family: "VT323";
 
     &,
     &:visited {
