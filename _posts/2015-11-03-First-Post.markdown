@@ -1,6 +1,6 @@
 ---
 post: yes
-image: /image/test.png
+image: /images/test.png
 layout: post
 title:  "blablabla!"
 date:   2015-11-03 15:14:29
