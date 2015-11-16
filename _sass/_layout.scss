@@ -218,6 +218,10 @@
 .page-heading {
     font-size: 20px;
 }
+.post-home{
+    display: inline;
+    border: 2px;
+}
 
 .post-list {
     margin-left: 0;
@@ -265,6 +269,10 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+}
+
+.blog-image {
+    float: right;
 }
 
 .post-content {
