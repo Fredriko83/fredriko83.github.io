@@ -4,7 +4,8 @@
 
 #header-title {
     margin-top: 20px;
-}
+    max-width: 320px;
+    }
 
 .site-header {
     border-top: 15px solid $white-color;
@@ -15,23 +16,9 @@
     -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
 
+
     // Positioning context for the mobile navigation icon
     position: relative;
-}
-
-.site-title {
-    font-size: 40px;
-    //line-height: 56px;
-    //letter-spacing: -1px;
-    margin-bottom: 0;
-    margin-top: 25px;
-    //float: left;
-    font-family: "VT323";
-
-    &,
-    &:visited {
-        color: white;
-    }
 }
 
 .site-nav {
@@ -57,7 +44,7 @@
     }
 
     .page-link {
-        color: white;
+        color: black;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -67,6 +54,7 @@
     }
 
     @include media-query($on-palm) {
+        color: #000000;
 
         ul {list-style:none;
             margin-top:0px;
@@ -80,12 +68,12 @@
             padding:0px;
         }
 
-        a:link, nav a:visited {Background-color:$blue-color-light; color:#FFFFFF}
-        a:hover, nav a:active {Background-color:$purple-color; color:#FFFFFF}
+        a:link, nav a:visited {Background-color:$blue-color-light; color:#000000}
+        a:hover, nav a:active {Background-color:$purple-color; color:#000000}
 
 
         position: absolute;
-        top: 160px;
+        top: 150px;
         right: 30px;
         background-color: $blue-color-light;
         border: 1px solid $grey-color-dark;
@@ -95,10 +83,11 @@
         .menu-icon {
             display: block;
             float: right;
-            width: 36px;
-            height: 36px;
+            width: 20px;
+            height: 20px;
             line-height: 0px;
-            padding-top: 20px;
+            padding-top: 15px;
+            padding-bottom: 10px;
             text-align: center;
 
 
@@ -178,15 +167,20 @@
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
+    .footer-col-1 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
 
+    .footer-col-2 {
+        display: none;
+    }
+
     .footer-col-3 {
+
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
         width:         calc(100% - (#{$spacing-unit} / 2));
+        display: none;
     }
 }
 
@@ -271,8 +265,8 @@
 
 .per-post {
     border-style: solid;
-    border-width: 1px;
-    border-color: $grey-color-dark;
+    border-width: 2px;
+    border-color: $grey-color;
     background-color: #eae5c7;
     padding: 10px;
     margin-top:10px;
@@ -285,7 +279,7 @@
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: $grey-color-dark;
 
     @include media-query($on-laptop) {
         display: none;
