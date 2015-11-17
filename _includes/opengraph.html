@@ -1,5 +1,5 @@
 {% if page.image %}
-<meta content="{{site.url}}{{ page.image }}" property="og:image">
+<meta content="{{site.url}}{{ page.ogimage }}" property="og:image">
 {% else %}
 <meta content="{{site.url}}/images/logo200x200.png" property="og:image">
 {% endif %}
@@ -11,7 +11,6 @@
 {% endif %}
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:url" content="{{site.url}}{{page.url}}">
-<!--<meta property="og:image" content="{% if page.thumbnail %}{{ page.thumbnail | prepend: site.baseurl | prepend: site.url }}{% else %}{{ {{baseurl}}/avatar | prepend: site.baseurl | prepend: site.url }}{% endif %}">-->
 <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 

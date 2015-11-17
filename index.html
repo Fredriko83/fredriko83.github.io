@@ -4,11 +4,12 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-<div class="post-home>"
+  <!--<h1 class="page-heading">Posts</h1>-->
+<div class="post-home>">
   <ul class="post-list">
     {% for post in site.posts %}
-      <img class="blog-image" src="{{ post.blogimage }}" alt="">
+      <div class="per-post">
+      <img class="post-image" src="{{ post.blogimage }}" alt="">
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,7 +19,7 @@ layout: default
           <p class="post-description">{{post.description}}</p>
 
       </li>
-
+      </div>
     {% endfor %}
   </ul>
 </div>

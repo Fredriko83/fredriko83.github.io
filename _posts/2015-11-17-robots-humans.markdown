@@ -1,12 +1,13 @@
 ---
-post: yes
-image: /images/test.png
-description: alalalalalongalalalalonglongilonglonglong
-blogimage: /images/jekyll.png
+post: true
 layout: post
-title:  "blablabla!"
+title:  "Robots & Humans"
+description: alalalalalongalalalalonglongilonglonglong
 date:   2015-11-03 15:14:29
-categories: random
+categories: Webdevelopment
+ogimage: /images/og/test.png
+blogimage: /images/post/robothuman.png
+image:
 ---
 jdfklajsdfklööasjdköfljadsklfjaöklsdfjklsdjflksadfjasklödfjskldfj
 jdfklajsdfklööasjdköfljadsklfjaöklsdfjklsdjflksadfjasklödfjskldfj

@@ -198,8 +198,6 @@
     }
 }
 
-
-
 /**
  * Page content
  */
@@ -220,15 +218,15 @@
 }
 .post-home{
     display: inline;
-    border: 2px;
 }
 
 .post-list {
     margin-left: 0;
-    list-style: none;
+    list-style-type: none;
 
     > li {
         margin-bottom: $spacing-unit;
+        list-style-type: none;
     }
 }
 
@@ -271,8 +269,27 @@
     }
 }
 
-.blog-image {
+.per-post {
+    border-style: solid;
+    border-width: 1px;
+    border-color: $grey-color-dark;
+    background-color: #eae5c7;
+    padding: 10px;
+    margin-top:10px;
+    border-radius: 25px;
+}
+
+.post-image {
     float: right;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+
+    @include media-query($on-laptop) {
+        display: none;
+    }
 }
 
 .post-content {
