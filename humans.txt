@@ -5,26 +5,16 @@ layout: null
 
 /* TEAM */
 
-
 All in all: Fredrik Olsson.
-
 
 Twitter: {{ site.twitter_username }}.
 
-
 Location: Broby, Sweden.
-
 
 /* SITE */
 
-
 Last update: {{ site.time | date_to_rfc822 }}
 
-
 Standards: HTML5, CSS3,..
-
-
-Components: Jekyll, SASS.
-
 
 Software: Webstorm, Photoshop.

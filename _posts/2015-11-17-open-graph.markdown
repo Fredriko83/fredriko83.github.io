@@ -4,7 +4,7 @@ layout: post
 title:  "Open Graph"
 date:   2015-11-17 10:30:59
 categories: Open Graph
-description: The pros and cons of working with Jekyll.
+description: Meta-data for sharing on social networks.
 blogimage: /images/post/og.png
 ogimage: /images/og/logo200x200.png
 image:
@@ -15,8 +15,13 @@ never shared another website or article on Facebook or anywhere else so it took 
 I spent a lot of time implementing og-tags only on my blog-post, then i realised that all the pages on the site should have og-tags,
 they should only be typed different. I choose article for the blog posts and all the rest of the pages are typed as website.
 
+The following code is written in a seperate HTML-file then included in all the files with the static site generator. It contains two if statements one is
+which image to use when for example a blogg gets shared on Facebook, if there is a specific image use that else: use the standard logo.
+The other if statement determines if a page is a post or just a part of the website and then sets the type accordingly.
 
 {% highlight ruby %}
+
+
 {% if page.image %}
 <meta content="{{site.url}}{{ page.ogimage }}" property="og:image">
 {% else %}
@@ -34,3 +39,5 @@ they should only be typed different. I choose article for the blog posts and all
 <meta property="og:site_name" content="{{ site.title }}">
 
 {% endhighlight %}
+
+all of the information in the Open Graph data are generated automatically with the static site generator.
