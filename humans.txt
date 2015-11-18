@@ -6,22 +6,13 @@ layout: null
 /* TEAM */
 
 
-Your title: Fredrik Olsson.
+All in all: Fredrik Olsson.
 
 
 Twitter: {{ site.twitter_username }}.
 
 
 Location: Broby, Sweden.
-
-
-
-/* THANKS */
-
-
-Name: name or url
-
-
 
 
 /* SITE */
@@ -33,7 +24,7 @@ Last update: {{ site.time | date_to_rfc822 }}
 Standards: HTML5, CSS3,..
 
 
-Components: Jekyll, SASS
+Components: Jekyll, SASS.
 
 
-Software: Webstorm
+Software: Webstorm, Photoshop.
